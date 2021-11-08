@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webscraping Weather</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+</head>
+
+<body>
+
+    <div class="btn">
+         <span class="fas fa-bars"></span>
+      </div>
+      <nav class="sidebar">
+         <div class="text">
+            Menu
+         </div>
+         <ul>
+             <li class="active"><a href="main.html">Home</a></li>
+            <li>
+               <a href="#" class="feat-btn">Activities
+               <span class="fas fa-caret-down first"></span>
+               </a>
+               <ul class="feat-show">
+                  <li><a href="CiteSchedule.html">CITE Schedule</a></li>
+                  <li><a href="WeatherWebscraping.html">Weather Scrape Data</a></li>
+                  <li><a href="YoutubeWebsraping.html">Yt Channel Scrape Data</a></li>
+                  <li><a href="CoVidUpdatewithTableau.html">CoVid Update using Tableau</a></li>
+                  <li><a href="GDPWebscraping.html">Trading Economics Web Srape GDP</a></li>
+               </ul>
+            </li>
+            <li>
+               <a href="#" class="serv-btn">Services
+               <span class="fas fa-caret-down second"></span>
+               </a>
+               <ul class="serv-show">
+                  <li><a href="#">App Design</a></li>
+                  <li><a href="#">Web Design</a></li>
+               </ul>
+            </li>
+            <li><a href="#">Overview</a></li> 
+         </ul>
+      </nav>
+<br><br> 
+  <h1 style="color: rgb(238, 238, 238);text-align: center;text-shadow: 2px 2px 10px black;">Weather Scrape Data's</h1>
+  <br>
+  </h1>
+  <br><br>
+  <div style="text-align: center;">
+    <iframe  src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRLSQMeoI_TGOT9G9hUJCq8gw4z397VqEKqkhxj-wDBMkPUeqCxnKC-c_t8GEbZ2UWyVmDO4vtVG28H/pubhtml?widget=true&amp;headers=false" width="650px" height="720px"></iframe>
+  </div>
+    <br><br>
+    <footer>
+      <p>Ken Desades</p>
+    <p>Bachelor of Science in Information Technology</p>
+    </footer>
+</body>
+<script>
+    $('.btn').click(function(){
+      $(this).toggleClass("click");
+      $('.sidebar').toggleClass("show");
+    });
+      $('.feat-btn').click(function(){
+        $('nav ul .feat-show').toggleClass("show");
+        $('nav ul .first').toggleClass("rotate");
+      });
+      $('.serv-btn').click(function(){
+        $('nav ul .serv-show').toggleClass("show1");
+        $('nav ul .second').toggleClass("rotate");
+      });
+      $('nav ul li').click(function(){
+        $(this).addClass("active").siblings().removeClass("active");
+      });
+ </script>

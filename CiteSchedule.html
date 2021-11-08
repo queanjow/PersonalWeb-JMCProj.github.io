@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CITE Schedule</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+</head>
+
+<body>
+
+    <div class="btn">
+         <span class="fas fa-bars"></span>
+      </div>
+      <nav class="sidebar">
+         <div class="text">
+            Menu
+         </div>
+         <ul>
+             <li class="active"><a href="main.html">Home</a></li>
+            <li>
+               <a href="#" class="feat-btn">Activities
+               <span class="fas fa-caret-down first"></span>
+               </a>
+               <ul class="feat-show">
+                  <li><a href="CiteSchedule.html">CITE Schedule</a></li>
+                  <li><a href="WeatherWebscraping.html">Weather Scrape Data</a></li>
+                  <li><a href="YoutubeWebsraping.html">Yt Channel Scrape Data</a></li>
+                  <li><a href="CoVidUpdatewithTableau.html">CoVid Update using Tableau</a></li>
+                  <li><a href="GDPWebscraping.html">Trading Economics Web Srape GDP</a></li>
+               </ul>
+            </li>
+            <li>
+               <a href="#" class="serv-btn">Services
+               <span class="fas fa-caret-down second"></span>
+               </a>
+               <ul class="serv-show">
+                  <li><a href="#">App Design</a></li>
+                  <li><a href="#">Web Design</a></li>
+               </ul>
+            </li>
+            <li><a href="#">Overview</a></li> 
+         </ul>
+      </nav>
+
+      <br>
+      <br>
+
+    <h1 id="School">JOSE MARIA COLLEGE</h1>
+    <h4 id="Cite">College of Information Technology Education</h4>
+    <h4 id="SchoolYear">BSIT 3rd year Class Schedule</h4>
+
+    <table class="table">
+        <tr>
+            <th>Subject Code</th>
+            <th>Description</th>
+            <th>Schedule</th>
+            <th>Instructor</th>
+        </tr>
+        <tr>
+            <td>IT Elect 3</td>
+            <td>IT Elective 3</td>
+            <td>MW 9:00-11:30</td>
+            <td>Mr. Aaron Vergara</td>
+        </tr>
+        <tr>
+            <td>EDP 101</td>
+            <td>Event-Driven Programming</td>
+            <td>MW 12:30-2:00</td>
+            <td>Mr. Ely Masculino</td>
+        </tr>
+        <tr>
+            <td>IM 101</td>
+            <td>Advance Database System</td>
+            <td>MW 2:00-4:30</td>
+            <td>Dr. Mark Sabili</td>
+        </tr>
+        <tr>
+            <td>SAD 101</td>
+            <td>System Analysis and Design</td>
+            <td>MW 4:30-6:00</td>
+            <td>Mr. Mark Buladaco</td>
+        </tr>
+        <tr>
+            <td>MAP 101</td>
+            <td>Mobile Application Development 1</td>
+            <td>TTh 8:00-10:30</td>
+            <td>Mr. Ron Enumerables</td>
+        </tr>
+        <tr>
+            <td>SIA 101</td>
+            <td>System Integration and Architecture</td>
+            <td>TTh 1:00-3:30</td>
+            <td>Dr. Mark Sabili</td>
+        </tr>
+        <tr>
+            <td>IAS 101</td>
+            <td>Information Assurance and Security 1</td>
+            <td>TTh 3:30-5:00</td>
+            <td>Mr. Aaron Vergara</td>
+        </tr>
+           <tr>
+            <td>NET 102</td>
+            <td>Networking 2</td>
+            <td>FS 4:00-6:30</td>
+            <td>Mrs. Janette Claro</td>
+        </tr>
+        <tr>
+            <td>SF 5</td>
+            <td>Student Formation 5</td>
+            <td>F 9:00-12:00</td>
+            <td>Mrs. Mia Bajan</td>
+        </tr>
+
+    </table>
+    <br>
+    <br>
+    <p>Ken Desades</p>
+    <p>Bachelor of Science in Information Technology</p>
+    <br>
+    <br>
+
+<script>
+         $('.btn').click(function(){
+           $(this).toggleClass("click");
+           $('.sidebar').toggleClass("show");
+         });
+           $('.feat-btn').click(function(){
+             $('nav ul .feat-show').toggleClass("show");
+             $('nav ul .first').toggleClass("rotate");
+           });
+           $('.serv-btn').click(function(){
+             $('nav ul .serv-show').toggleClass("show1");
+             $('nav ul .second').toggleClass("rotate");
+           });
+           $('nav ul li').click(function(){
+             $(this).addClass("active").siblings().removeClass("active");
+           });
+      </script>
+
+
+
+</body>
+</html>

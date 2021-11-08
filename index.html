@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>My Personal Website</title>
+	<link rel="icon" type="image/png" href="images/male-technologist.png" hreflang="en-us">
+	<link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
+	<link rel="stylesheet" href="./css/styles.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+   <link type="text/javascript" src="main.js">
+	
+</head>
+<body>
+<div>
+	  <img src="images/img.png" alt="">
+</div>
+<div class="btn">
+         <span class="fas fa-bars"></span>
+      </div>
+      <nav class="sidebar">
+         <div class="text">
+            Menu
+         </div>
+         <ul>
+             <li class="active"><a href="main.html">Home</a></li>
+            <li>
+               <a href="#" class="feat-btn">Activities
+               <span class="fas fa-caret-down first"></span>
+               </a>
+               <ul class="feat-show">
+                  <li><a href="CiteSchedule.html">CITE Schedule</a></li>
+                  <li><a href="WeatherWebscraping.html">Weather Scrape Data</a></li>
+                  <li><a href="YoutubeWebsraping.html">Yt Channel Scrape Data</a></li>
+                  <li><a href="CoVidUpdatewithTableau.html">CoVid Update using Tableau</a></li>
+                  <li><a href="GDPWebscraping.html">Trading Economics Web Srape GDP</a></li>
+               </ul>
+            </li>
+            <li>
+               <a href="#" class="serv-btn">Services
+               <span class="fas fa-caret-down second"></span>
+               </a>
+               <ul class="serv-show">
+                  <li><a href="#">App Design</a></li>
+                  <li><a href="#">Web Design</a></li>
+               </ul>
+            </li>
+            <li><a href="#">Overview</a></li> 
+         </ul>
+      </nav>
+     
+
+<div id = "site">
+	<div class="switch-wrapper"> 
+		</a>
+		<div class="sun"></div> 
+		<div class="toggle-wrapper">
+			<input type="checkbox" id="switch"  />
+			<label for="switch" id="switch1" >Toggle</label> 
+		</div>
+		<div class="moon"></div>
+	</div>
+
+	<header class="intro">
+		<h1 class="intro_hello">
+			Hello!
+			<span  id="wave" class="emoji wave-hand animated "></span>
+		</h1>
+		<h2 class="intro_tagline">
+			I'm
+			<div class="myname">Kenht Desades</div>
+			 a design-minded <br><br><br> 
+			 </p>
+			<div class="mytext">
+				<div class="content">
+					<div class=" container">
+						<ul class="list">
+							<li class="item">T R U S T W O R T H Y.</li>
+							<li class="item">D E P E N D A B L E.</li>
+							<li class="item">I N N O V A T I V E.</li>
+						</ul>
+					</div><br>
+				</div>
+			</div>
+			<span>"Good web design is about the character of the content, not the character of the designer."
+			<span id="emojiwavehand" class="emoji technologist"></span>
+		</h2>
+		<h3 class="intro_contact">
+			<span>Get in touch</span>
+			<span class="emoji pointer"></span>
+			<span id="emailme">
+				<a href="#link your email" target="_blank" class="highlight-link">kndesades@gmail.com</a>
+			</span>
+		</h3>
+	</header>
+
+	<section class = "section background" >
+		<div class="section_title">Background</div>
+		<div class="section_content">
+			<p>
+				I am 3rd year student, Bachelor of Science in Information Technology in Jose Maria College.
+				I live in Lanang Beach Club, Davao City. 
+			</p>
+			<a class="status" href="images/myResume.pdf" target="_blank"> 
+				<div class="status_light"> 
+					<div class="status_light_ring"></div> 
+					<div class="status_light_led"></div> 
+				</div> 
+				<div class="status_message">
+					Interested in working together? Reach out!
+				</div> 
+			</a>
+		</div>
+	</section>
+
+	<footer class="footer">
+	 	<div class="footer_copyright"> 
+	 		<div class="top"> 
+		</div>
+ 	</footer>
+	<button id="top-button" style="display: inline-block;"></button>
+	<script>
+         $('.btn').click(function(){
+           $(this).toggleClass("click");
+           $('.sidebar').toggleClass("show");
+         });
+           $('.feat-btn').click(function(){
+             $('nav ul .feat-show').toggleClass("show");
+             $('nav ul .first').toggleClass("rotate");
+           });
+           $('.serv-btn').click(function(){
+             $('nav ul .serv-show').toggleClass("show1");
+             $('nav ul .second').toggleClass("rotate");
+           });
+           $('nav ul li').click(function(){
+             $(this).addClass("active").siblings().removeClass("active");
+           });
+      </script>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="main.js"></script>
+
+</body>
+</html>
